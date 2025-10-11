@@ -38,7 +38,7 @@ function Home() {
 
     const deleteExpens = async (id) => {
         try {
-            const url = `https://expense-tracker-backend-two-tau.vercel.app/expenses/${id}`;
+            const url = `https://expense-backend-40ih.onrender.com/expenses/${id}`;
             const headers = {
                 headers: {
                     'Authorization': localStorage.getItem('token')
@@ -62,7 +62,7 @@ function Home() {
 
     const fetchExpenses = async () => {
         try {
-            const url = `https://expense-tracker-backend-two-tau.vercel.app/expenses`;
+            const url = `https://expense-backend-40ih.onrender.com/expenses`;
             const headers = {
                 headers: {
                     'Authorization': localStorage.getItem('token')
@@ -86,7 +86,7 @@ function Home() {
 
     const addTransaction = async (data) => {
         try {
-            const url = `https://expense-tracker-backend-two-tau.vercel.app/expenses`;
+            const url = `https://expense-backend-40ih.onrender.com/expenses`;
             const headers = {
                 headers: {
                     'Authorization': localStorage.getItem('token'),
@@ -140,6 +140,7 @@ function Home() {
 
 
 export default Home
+
 
 
 
