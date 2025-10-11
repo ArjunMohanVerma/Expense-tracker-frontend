@@ -120,6 +120,7 @@ function Home() {
                 <h1>Welcome {loggedInUser}</h1>
                 <button onClick={handleLogout}>Logout</button>
             </div>
+            <div>Please add income in +ve and expenses in -ve numbers</div>
             <ExpenseDetails
                 incomeAmt={incomeAmt}
                 expenseAmt={expenseAmt}
@@ -139,5 +140,6 @@ function Home() {
 
 
 export default Home
+
 
 
