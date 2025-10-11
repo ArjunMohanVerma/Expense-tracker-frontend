@@ -62,7 +62,7 @@ function Home() {
 
     const fetchExpenses = async () => {
         try {
-            const url = `${APIUrl}/expenses`;
+            const url = `https://expense-tracker-backend-two-tau.vercel.app/expenses`;
             const headers = {
                 headers: {
                     'Authorization': localStorage.getItem('token')
@@ -86,7 +86,7 @@ function Home() {
 
     const addTransaction = async (data) => {
         try {
-            const url = `${APIUrl}/expenses`;
+            const url = `https://expense-tracker-backend-two-tau.vercel.app/expenses`;
             const headers = {
                 headers: {
                     'Authorization': localStorage.getItem('token'),
@@ -139,4 +139,5 @@ function Home() {
 
 
 export default Home
+
 
