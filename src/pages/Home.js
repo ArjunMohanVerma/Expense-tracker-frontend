@@ -38,7 +38,7 @@ function Home() {
 
     const deleteExpens = async (id) => {
         try {
-            const url = `${APIUrl}/expenses/${id}`;
+            const url = `https://expense-tracker-backend-opal.vercel.app/expenses/${id}`;
             const headers = {
                 headers: {
                     'Authorization': localStorage.getItem('token')
@@ -136,5 +136,6 @@ function Home() {
         </div>
     )
 }
+
 
 export default Home
